@@ -1,0 +1,24 @@
+<div class="container">
+    {{ form_start(form) }}
+
+    <div class="form-group">
+        {{ form_label(form.masv) }}
+        {{ form_widget(form.masv,{'attr':{'class':'form-control'}}) }}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.name) }}
+        {{ form_widget(form.name,{'attr':{'class':'form-control'}}) }}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.age) }}
+        {{ form_widget(form.age,{'attr':{'class':'form-control'}}) }}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.country) }}
+        {{ form_widget(form.country,{'attr':{'class':'form-control'}}) }}
+    </div>
+    <div class="form-group">
+        <button class="btn btn-info">{{ button_label|default('Submit') }}</button>
+    </div>
+    {{ form_end(form) }}
+</div>
